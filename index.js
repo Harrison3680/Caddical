@@ -2,7 +2,7 @@ global.config = require("./config.json")
 const Dlang = require('discordbot-script')
 const bot = new Dlang({
   token: config.TOKEN,
-  prefix: [""]
+  prefix: ["C!"]
 })
 bot.MessageEvent()
 
@@ -36,7 +36,7 @@ bot.Status({
 }, 12000)
  
 bot.ReadyCommand({
-name: "",
+name: "872559070740103269",
 code: `
 $client[tag] has been started at $client[readyat]!
 $exec[git pull origin main]`

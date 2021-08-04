@@ -19,9 +19,6 @@ for (const files of folders) {
     }
 }
 
-bot.Variables({
-  cash:"0",
-  bank:"0"
 })
 
 bot.Status({

@@ -19,8 +19,6 @@ for (const files of folders) {
     }
 }
 
-})
-
 bot.Status({
     0: {
         description:"with the developers", 

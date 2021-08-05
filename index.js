@@ -19,6 +19,12 @@ for (const files of folders) {
     }
 }
 
+bot.Variables({
+  mutedroleid:""
+})
+
+
+
 bot.Status({
     0: {
         description:"with the developers", 

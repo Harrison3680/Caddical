@@ -20,7 +20,8 @@ for (const files of folders) {
 }
 
 bot.Variables({
-  mutedroleid:""
+  mutedroleid:"",
+  prefix:""
 })
 
 

@@ -2,7 +2,7 @@ global.config = require("./config.json")
 const Dlang = require('discordbot-script')
 const bot = new Dlang({
   token: config.TOKEN,
-  prefix: ["C!"]
+  prefix: [$getServerVar[prefix]]
 })
 bot.MessageEvent()
 
@@ -21,7 +21,7 @@ for (const files of folders) {
 
 bot.Variables({
   mutedroleid:"",
-  prefix:""
+  prefix:"C!"
 })
 
 

@@ -2,7 +2,7 @@ global.config = require("./config.json")
 const Dlang = require('discordbot-script')
 const bot = new Dlang({
   token: config.TOKEN,
-  prefix: [$getServerVar[prefix]]
+  prefix: ["$getServerVar[prefix]"]
 })
 bot.MessageEvent()
 

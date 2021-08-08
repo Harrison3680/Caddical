@@ -1,4 +1,4 @@
-odule.exports = ({
+module.exports = ({
 name: "image",
 code: `
 $image[https://api.alexflipnote.dev/supreme?text=$replaceText[$message[]; ;+]]

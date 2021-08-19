@@ -4,7 +4,7 @@ module.exports = ({
 name:"ban",
 code: `
 
-$ban[${u};$guildID;(By: $tag[]) - $replaceText[$replaceText[$checkCondition[$message[2]==];true;No Reason Provided];false;messageSlice[>1]]
+$ban[${u};$guildID;(By: $tag[]) - $replaceText[$replaceText[$checkCondition[$message[2]==];true;No Reason Provided];false;$messageSlice[>1]]
 
 **$tag[${u}]** has been banned by **$tag[]**
 

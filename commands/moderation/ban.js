@@ -14,6 +14,6 @@ $onlyIf[$ownerID!=${u};You can't ban the owner]
 $onlyIf[$authorID!=${u};You can't ban yourself]
 $onlyIf[$client[id]!=${u};Rude :(]
 $onlyIf[$userExists[${u}]==true;That user doesn't appear to exist]
-$onlyBotPerms[ban;:x: I'm missing the `{perms}` permission!]
-$onlyPerms[ban;:x: You're missing the `{perms}` permissions!]
+$onlyBotPerms[ban;:x: I'm missing the \`{perms}\` permission!]
+$onlyPerms[ban;:x: You're missing the \`{perms}\` permissions!]
 `})

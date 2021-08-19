@@ -15,7 +15,6 @@ for (const files of folders) {
     for (const commands of folder) {
         const command = require(`./commands/${files}/${commands}`)
         bot.Command(command);
-        console.log(`Loaded: ${command.name} | ${files}`);
     }
 }
 

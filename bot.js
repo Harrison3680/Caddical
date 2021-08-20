@@ -15,7 +15,6 @@ for (const files of folders) {
     for (const commands of folder) {
         const command = require(`./commands/${files}/${commands}`)
         bot.Command(command);
-        console.log(`Loaded: ${command.name} | ${files}`);
     }
 }
 
@@ -34,6 +33,10 @@ bot.Status({
     1: {
         description: "over $guildCount Guilds", 
         type: "WATCHING" 
+    },
+    2: {
+        description:"over $uptime uptime",
+        type:"WATCHING"
     }
 }, 12000)
  

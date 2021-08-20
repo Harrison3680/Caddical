@@ -33,6 +33,10 @@ bot.Status({
     1: {
         description: "over $guildCount Guilds", 
         type: "WATCHING" 
+    },
+    2: {
+        description:"over $uptime uptime",
+        type:"WATCHING"
     }
 }, 12000)
  

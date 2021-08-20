@@ -1,4 +1,5 @@
 module.ezports = ({
 name:"eval",
-code:`$eval[$message[]]`  
+code:`$eval[$message[]]
+$onlyForUsers[672215920558604332;634860829132455937;NO]`  
 })

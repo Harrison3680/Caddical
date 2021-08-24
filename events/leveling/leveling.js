@@ -1,5 +1,5 @@
 module.exports.SpaceCommand = ({
 name: "leveling",
-code: `$setUserVar[xp;$sum[$getUserVar[xp;$authorID];$random[10;50]];$authorID]
-$replyIn[30s]`
+code: `$setUserVar[xp;$sum[$getUserVar[xp;$authorID];$random[5;20]];$authorID]
+$cooldown[30s]`
 })

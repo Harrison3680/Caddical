@@ -6,5 +6,5 @@ $useChannel[$getServerVar[rch]]
 $setUserVar[lvl;$sum[$getUserVar[lvl];1]]
 $setUserVar[rexp;$multi[$getUserVar[rexp];2]]
 $onlyIf[$getUserVar[exp]>=$getUserVar[rexp];]
-$onlyIf[$guildID!=;]` 
+$onlyIf[$guildID!=;] 
 `})

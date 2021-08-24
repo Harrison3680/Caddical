@@ -48,7 +48,8 @@ bot.Variables({
   prefix:"C!",
   exp:"0",
   rexp:"500",
-  lvl:"0"
+  lvl:"0",
+  rch:"867739140480303114"
 })
 
 

@@ -5,5 +5,5 @@ name:"rank",
 code: `
 $image[${uri}]
 
-$onlyIf[$api[${uri};code]!=400;$api[${uri};message]]
+$onlyIf[$api[${uri};code]!=400;error happened]
 `}

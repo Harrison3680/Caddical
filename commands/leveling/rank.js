@@ -3,7 +3,5 @@ let uri = 'https://vacefron.nl/api/rankcard?username=$username[$mentioned[1;yes]
 module.exports = {
 name:"rank",
 code: `
-$image[${uri}]
-
-$onlyIf[$api[${uri};code]!=400;error happened]
+${url}
 `}

@@ -1,4 +1,4 @@
 module.exports = {
 name:"help",
-code:`imma spank devonte like the bitch he is UwU`
+code:`$title[**__Help has arrived!__**]
 }

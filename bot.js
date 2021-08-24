@@ -47,7 +47,7 @@ bot.Variables({
   mutedroleid:"",
   prefix:"C!",
   xp:"0",
-  rxp:"500",
+  rexp:"500",
   lvl:"0"
 })
 

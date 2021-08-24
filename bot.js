@@ -48,7 +48,7 @@ bot.Variables({
   prefix:"C!",
   xp:"0",
   rxp:"500",
-  level:"0"
+  lvl:"0"
 })
 
 

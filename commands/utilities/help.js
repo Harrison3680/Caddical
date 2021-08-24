@@ -1,4 +1,4 @@
 module.exports = {
 name:"help",
-code:`wip`
+code:`imma spank devonte like the bitch he is UwU`
 }

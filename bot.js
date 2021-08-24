@@ -50,7 +50,7 @@ bot.Variables({
   rexp:"500",
   lvl:"0",
   rch:"867739140480303114",
-  rmsg:"You have leveled up to $getUserVar[lvl]"
+  rmsg:"You have leveled up to {level}"
 })
 
 

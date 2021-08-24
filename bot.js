@@ -45,7 +45,10 @@ for (const Files of events) {
 
 bot.Variables({
   mutedroleid:"",
-  prefix:"C!"
+  prefix:"C!",
+  xp:"0",
+  rxp:"500",
+  level:"0"
 })
 
 

@@ -17,10 +17,41 @@ for (const files of folders) {
         bot.Command(command);
     }
 }
+const events = fs.readdirSync("./events/");
+for (const Files of events) {
+    const eventFile = fs.readdirSync(`./events/${Files}/`).filter(file => file.endsWith(".js"))
+    for (const event of eventFile) {
+        const obj = require(`./events/${Files}/${event}`);
+        if (typeof(obj) != "object") {
+        console.log("invalid module.exports data ...shutting down");
+        process.exit();
+}
+        const eventName = Object.keys(obj);
+        const eventData = Object.values(obj)[0];
+        if (typeof(eventData) != "object") {
+            if (typeof(eventData) != "number") {
+                console.log("invalid event data ...shutting down");
+                process.exit();
+             }
+        }
+        bot[eventName](eventData);
+        if(bot.vars){
+            bot.Variables(eventData);
+        } if(bot.awaitedCommands){
+            bot.AwaitedCommand(eventData);
+        }
+    }
+}
 
 bot.Variables({
   mutedroleid:"",
-  prefix:"C!"
+  prefix:"C!",
+  exp:"0",
+  rexp:"500",
+  lvl:"1",
+  rch:"867739140480303114",
+  cash:"0",
+  bank:"0"
 })
 
 

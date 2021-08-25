@@ -1,4 +1,4 @@
 module.exports = {
 name:"help",
-code:`hi`
+code:`$title[**__Help has arrived!__**]`
 }

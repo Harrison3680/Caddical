@@ -48,7 +48,7 @@ bot.Variables({
   prefix:"C!",
   exp:"0",
   rexp:"500",
-  lvl:"0",
+  lvl:"1",
   rch:"867739140480303114",
   rmsg:"You have leveled up to {level}"
 })

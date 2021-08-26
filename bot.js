@@ -56,7 +56,7 @@ bot.Variables({
 })
 
 
-const client = require('./node_modules/discordbot-script/main/script.js')
+const client = require('./Caddical/node_modules/discordbot-script/main/script.js')
 
 let totalSeconds = (client.uptime / 1000);
 let days = Math.floor(totalSeconds / 86400)

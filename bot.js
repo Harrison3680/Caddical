@@ -57,6 +57,17 @@ bot.Variables({
 
 
 
+let totalSeconds = (client.uptime / 1000);
+let days = Math.floor(totalSeconds / 86400)
+totalSeconds %= 86400
+let hours = Math.floor(totalSeconds / 3600)
+totalSeconds %= 3600
+let minutes = Math.floor(totalSeconds / 60)
+let seconds = Math.floor(totalSeconds % 60)
+
+let result = `${days} days | ${hours} hours | ${minutes} minutes | ${seconds} seconds`
+
+
 bot.Status({
     0: {
         description:"with the developers", 
@@ -67,7 +78,7 @@ bot.Status({
         type: "WATCHING" 
     },
     2: {
-        description:"over $uptime uptime",
+        description: `over ${result} uptime`,
         type:"WATCHING"
     }
 }, 12000)

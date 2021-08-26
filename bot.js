@@ -55,20 +55,6 @@ bot.Variables({
   lvlbg:"https://cdn.discordapp.com/attachments/867739140480303114/879811408496308244/background.jpeg"
 })
 
-
-const client = require('/home/container/Caddical/node_modules/discordbot-script/main/script.js')
-
-let totalSeconds = (client.uptime / 1000);
-let days = Math.floor(totalSeconds / 86400)
-totalSeconds %= 86400
-let hours = Math.floor(totalSeconds / 3600)
-totalSeconds %= 3600
-let minutes = Math.floor(totalSeconds / 60)
-let seconds = Math.floor(totalSeconds % 60)
-
-let result = `${days} days | ${hours} hours | ${minutes} minutes | ${seconds} seconds`
-
-
 bot.Status({
     0: {
         description:"with the developers", 
@@ -79,7 +65,7 @@ bot.Status({
         type: "WATCHING" 
     },
     2: {
-        description: `over ${result} uptime`,
+        description: `over NaN uptime`,
         type:"WATCHING"
     }
 }, 12000)

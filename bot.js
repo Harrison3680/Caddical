@@ -65,7 +65,7 @@ bot.Status({
         type: "WATCHING" 
     },
     2: {
-        description: `over NaN uptime`,
+        description: `over $uptime uptime`,
         type:"WATCHING"
     }
 }, 12000)

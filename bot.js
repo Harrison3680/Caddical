@@ -52,10 +52,9 @@ bot.Variables({
   rch:"867739140480303114",
   cash:"0",
   bank:"0",
-  lvlbg:"https://cdn.discordapp.com/attachments/867739140480303114/879811408496308244/background.jpeg"
+  lvlbg:"https://cdn.discordapp.com/attachments/867739140480303114/879811408496308244/background.jpeg",
+  xpcolor:"FFFFFF"
 })
-
-
 
 bot.Status({
     0: {
@@ -67,7 +66,7 @@ bot.Status({
         type: "WATCHING" 
     },
     2: {
-        description:"over $uptime uptime",
+        description: `over $uptime uptime`,
         type:"WATCHING"
     }
 }, 12000)

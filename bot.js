@@ -53,7 +53,7 @@ bot.Variables({
   cash:"0",
   bank:"0",
   lvlbg:"https://cdn.discordapp.com/attachments/867739140480303114/879811408496308244/background.jpeg",
-  xpcolor:"00000"
+  xpcolor:"FFFFFF"
 })
 
 bot.Status({

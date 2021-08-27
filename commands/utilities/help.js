@@ -21,7 +21,6 @@ $addField[Fun; - 9ball
 - coin
 - google
 - hug
-- image
 - kill 
 - kiss 
 - meme

@@ -11,4 +11,4 @@ $addField[__Description:__;$help[$toLowercase[$message[1]];description]]
 $footer[Here ya go.]
 $color[RANDOM]
 $onlyIf[$checkCondition[$help[$toLowercase[$message[1]];name]==invalidFunction]!=true;:x: \`$message[]\` is invalid! Try again.]
-$cooldown[3s;:x: Relax for {time}]
+$cooldown[3s;:x: Relax for {time}]`

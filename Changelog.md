@@ -8,3 +8,5 @@
 # 1.0.3
 - Added Leveling
 - Added Economy
+# 1.0.4 
+- Added a help function.

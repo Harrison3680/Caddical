@@ -16,7 +16,7 @@ $addField[Economy; - add-bank
 - weekly
 - withdraw
 - work]
-$addField[Fun; - 9ball
+$addField[Fun; - 8ball
 - boop
 - coin
 - google

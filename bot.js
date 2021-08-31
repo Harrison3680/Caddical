@@ -54,6 +54,7 @@ bot.Variables({
   bank:"0",
   lvlbg:"https://cdn.discordapp.com/attachments/867739140480303114/879811408496308244/background.jpeg",
   xpcolor:"FFFFFF",
+  files:"0",
   C4:"false"
 })
 

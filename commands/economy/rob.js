@@ -1,5 +1,5 @@
 module.exports = ({
-name:"rob",
+name:"pickpocket",
 code:`$title[Rob Successful]
 $description[Succefully Robbed $username[$findUser[$message[1]]]]
 $setVar[cash;$sum[$getVar[cash;$authorID];$random[100;350]];$authorID]

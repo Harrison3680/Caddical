@@ -6,5 +6,6 @@ $setServerVar[files;$sub[$getServerVar[files];$getServerVar[files]]]
 $replyIn[1m]
 $description[Raiding the vault wait for a few minutes]
 $setServerVar[C4;false]
-$onlyIf[$getServerVar[C4]==true;you need C4 to blow open the vault]`  
+$onlyIf[$getServerVar[C4]==true;you need C4 to blow open the vault]
+$guildCooldown[1h;Wait {time} to be able to raid the vault again]`  
 })

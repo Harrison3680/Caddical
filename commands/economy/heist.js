@@ -5,5 +5,5 @@ $setVar[cash;$sum[$getVar[cash;$authorID];$multi[$getServerVar[files];10];$autho
 $setServerVar[files;$sub[$getServerVar[files];$getServerVar[files]]]
 $replyIn[1m]
 $description[Raiding the vault wait for a few minutes]
-$onlyIf[$getServerVar[C4]!=]`  
+$onlyIf[$getServerVar[C4]!`  
 })

@@ -1,5 +1,5 @@
-module.expprts = ({
-name:"hesit",
+module.exports = ({
+name:"heist",
 code:`$editIn[1m;{description:You successfully robbed the vault for $multi[$getServerVar[files];10]}]
 $setVar[cash;$sum[$getVar[cash;$authorID];$multi[$getServerVar[files];10];$authorID]
 $setServerVar[files;$sub[$getServerVar[files];$getServerVar[files]]]

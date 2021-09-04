@@ -56,7 +56,9 @@ bot.Variables({
   xpcolor:"FFFFFF",
   files:"0",
   C4:"false",
-  VaultCap:"100"
+  VaultCap:"100",
+  yotuber:"false",
+  diploma:"false"
 })
 
 bot.Status({

@@ -58,7 +58,8 @@ bot.Variables({
   C4:"false",
   VaultCap:"100",
   youtuber:"false",
-  diploma:"false"
+  diploma:"false",
+  job:"false"
 })
 
 bot.Status({
@@ -71,7 +72,7 @@ bot.Status({
         type: "WATCHING" 
     },
     2: {
-        description: `over $uptime uptime`,
+        description: "over $uptime uptime",
         type:"WATCHING"
     }
 }, 12000)

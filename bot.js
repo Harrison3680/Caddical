@@ -57,7 +57,7 @@ bot.Variables({
   files:"0",
   C4:"false",
   VaultCap:"100",
-  yotuber:"false",
+  youtuber:"false",
   diploma:"false"
 })
 

@@ -60,7 +60,7 @@ bot.Variables({
   youtuber:"false",
   cashier:"false",
   diploma:"false",
-  job:"false"
+  job:"N/A"
 })
 
 bot.Status({

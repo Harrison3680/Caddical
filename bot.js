@@ -60,7 +60,16 @@ bot.Variables({
   youtuber:"false",
   cashier:"false",
   electrician:"false",
+  baker:"false",
+  teacher:"false",
+  professor:"false",
+  principal:"false",
+  dean:"false",
   diploma:"false",
+  associate:"false",
+  bachlor:"false",
+  master:"false",
+  docterate:"false",
   job:"N/A"
 })
 

@@ -24,7 +24,7 @@ module.exports = ({
   
   $If[$message[1]==quit;
   You just quit your job as a **$get[job]**.
-  $setVar[$getVar[job];false;$authorID]]
+  $setVar[$getVar[job];N/A;$authorID]]
   $let[job;$getVar[job;$authorID]]
   $onlyIf[$checkCondition[$getVar[job;$authorID]==N/A]!=true;You don't have a job so you can't quit]
 '`})

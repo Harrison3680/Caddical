@@ -27,5 +27,13 @@ name:"bbwork",
   $replaceText[$replaceText[$checkCondition[$getVar[job;$authorID]==N/A];true;You don't have a job];false;You're already working as a **$getVar[job;$authorID]**!]]
   $onlyIf[$getVar[baker;$authorID]!=false;You need to sign up as a baker]
   $onlyIf[$getVar[diploma;$authorID]!=false;You need a highschool diploma to work here]]
-  `
+  
+  $If[$message[1]==teacher;
+  $setUserVar[cash;$sum[$getUserVar[cash;$authorID];$random[45;145]];$authorID] You worked as a teacher and earned $$random[45;145]
+  $onlyIf[$getVar[job;$authorID]==teacher;
+  $replaceText[$replaceText[$checkCondition[$getVar[job;$authorID]==N/A];true;You don't have a job];false;You're already working as a **$getVar[job;$authorID]**!]]
+  $onlyIf[$getVar[teacher;$authorID]!=false;You need to sign up as a teacher]
+  $onlyIf[$getVar[bachlor;$authorID]!=false;You need a bachlor degree to work here]]
+  
+  $onlyIf[$checkContains[$message[1];youtuber;cashier;electrician;baker;teacher]==true;You must provide a valid job the job list can be found using C!job list]`
 })

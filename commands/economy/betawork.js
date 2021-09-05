@@ -28,6 +28,6 @@ module.exports = ({
   $setVar[job;N/A;$authorID]
   $setVar[$getVar[job;$authorID];false;$authorID]
   $let[job;$getVar[job;$authorID]]
-  $onlyIf[$checkCondition[$getVar[job;$authorID]==N/A]!=true;You don't have a job so you can't quit]]
+  $onlyIf[$checkCondition[$getVar[job;$authorID]==N/A]!=true;You don't have a job so you can't quit]
 `})
 // baker, teacher, professor, plumber, 

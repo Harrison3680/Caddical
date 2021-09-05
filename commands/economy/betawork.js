@@ -1,6 +1,6 @@
 module.exports = ({
   name:"bwork",
-  code:`
+  code: `
   $If[$message[1]==youtuber; 
   $setUserVar[cash;$sum[$getUserVar[cash;$authorID];$random[20;45]];$authorID] You worked as a youtuber and earned $$random[20;45]
   $onlyIf[$getVar[job;$authorID]==youtuber;
@@ -28,6 +28,6 @@ module.exports = ({
   $setVar[job;N/A;$authorID]]
   $setVar[$getVar[job;$authorID];false;$authorID]]
   $let[job;$getVar[job;$authorID]]
-  $onlyIf[$checkCondition[$getVar[job;$authorID]==N/A]!=true;You don't have a job so you can't quit]
-'`})
+  $onlyIf[$checkCondition[$getVar[job;$authorID]==N/A]!=true;You don't have a job so you can't quit]]
+`})
 // baker, teacher, professor, plumber, 

@@ -23,7 +23,9 @@ module.exports = ({
   $onlyIf[$getVar[diploma;$authorID]!=false;You need a highschool diploma to work here.]]
   
   $If[$message[1]==quit;
-  $onlyIf[$checkCondition[$setVar[job;N/A;$authorID]==N/A]!=true;You don't have a job so you can't quit]
+  You just quit your job as a **$get[job]**.
   $setVar[$getVar[job];false;$authorID]]
-  '`})
+  $let[job;$getVar[job]]
+  $onlyIf[$checkCondition[$getVar[job;$authorID]==N/A]!=true;You don't have a job so you can't quit]
+'`})
 // baker, teacher, professor, plumber, 

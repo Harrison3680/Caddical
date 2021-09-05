@@ -18,13 +18,15 @@ module.exports = ({
   $If[$message[1]==electrician;
   $setUserVar[cash;$sum[$getUserVar[cash;$authorID];$random[75;105]];$authorID] You worked as a electrician and earned $$random[75;105]
   $onlyIf[$getVar[job;$authorID]==electrician;
-  $replaceText[$replaceText[$checkCondition[$getVar[job;$authorID]==N/A];true;You don't have a job];false;You're already working as a **$getVar[job;$authorID]**!]]
+  $replaceText[$replaceText[$checkCondition[$getVar[job;$authorID]==N/A];true;You don't have a job];false;You're already working as a **$getVar[job;$authorID]**!]
   $onlyIf[$getVar[electrician;$authorID]!=false;You need to sign up as an electrician]
   $onlyIf[$getVar[diploma;$authorID]!=false;You need a highschool diploma to work here.]]
   
   $If[$message[1]==quit;
   You just quit your job as a **$get[job]**.
-  $setVar[$getVar[job];N/A;$authorID]]
+  
+  $setVar[job;N/A;$authorID]]
+  $setVar[$getVar[job;$authorID];false;$authorID]]
   $let[job;$getVar[job;$authorID]]
   $onlyIf[$checkCondition[$getVar[job;$authorID]==N/A]!=true;You don't have a job so you can't quit]
 '`})

@@ -58,6 +58,7 @@ bot.Variables({
   C4:"false",
   VaultCap:"100",
   youtuber:"false",
+  cashier:"false",
   diploma:"false",
   job:"false"
 })
